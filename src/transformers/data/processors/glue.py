@@ -200,7 +200,7 @@ class BoolqProcessor(DataProcessor):
             text_b = x["passage"]
             label = x["label"]
             examples.append(InputExample(guid=guid, text_a=text_a, text_b=text_b, label=str(label)))
-    return examples
+        return examples
 
 
 class MrpcProcessor(DataProcessor):
